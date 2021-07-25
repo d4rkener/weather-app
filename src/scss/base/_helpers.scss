@@ -1,0 +1,33 @@
+@use '../abstracts' as abs;
+
+.flex {
+  display: flex;
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+
+  &-d-c {
+    flex-direction: column;
+  }
+}
+
+.hide {
+  display: none;
+
+  &-mobile {
+    @include abs.breakpointDown(medium) {
+      display: none;
+    }
+  }
+
+  &-desktop {
+    @include abs.breakpoint(medium) {
+      display: none;
+    }
+  }
+}

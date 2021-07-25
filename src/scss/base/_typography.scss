@@ -1,0 +1,48 @@
+@use '../abstracts' as abs;
+
+h1 {
+  font-weight: 500;
+  font-size: 9rem;
+
+  > span {
+    font-weight: 500;
+    font-size: 3rem;
+    color: abs.$lightText;
+  }
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 700;
+
+  > span {
+    font-size: 2.25rem;
+    font-weight: 500;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 2.25rem;
+  color: abs.$lightText;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1.125rem;
+  color: abs.$lighterText;
+  font-weight: 500;
+}
+
+p {
+  font-weight: 500;
+  font-size: 1rem;
+
+  &.dark {
+    color: abs.$lightText;
+  }
+}
