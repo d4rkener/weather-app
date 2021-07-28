@@ -1,0 +1,26 @@
+@use '../abstracts' as abs;
+
+.btn {
+  padding: 0.625rem 1.125rem;
+  color: abs.$text;
+  cursor: pointer;
+  border: 0;
+  font-family: abs.$fontRaleway;
+  font-size: 1rem;
+
+  &-primary {
+    background: abs.$gray;
+    font-weight: 500;
+  }
+
+  &-round {
+    width: 40px;
+    height: 40px;
+    color: abs.$text;
+    background: abs.$gray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

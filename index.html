@@ -14,10 +14,38 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <title>Vite App</title>
+    <title>Weather App | Best App For Checking Weathers</title>
   </head>
   <body>
-    <h1>Hello</h1>
+    <main class="main">
+      <section class="main__weather">
+        <div class="buttons flex flex-jc-sb flex-ai-c">
+          <button class="btn btn-primary">Search for places</button>
+          <div class="btn-round">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+        </div>
+        <div>
+          <div class="image">
+            <img src="./src/assests/Shower.png" alt="Showers" />
+          </div>
+          <div>
+            <h1>15<span>&#176;C</span></h1>
+            <h4>Shower</h4>
+            <div class="date">
+              <h5>Today</h5>
+              <span>&#8226;</span>
+              <h5>Fri, 5 Jun</h5>
+            </div>
+            <div class="location">
+              <i class="fas fa-map-marker-alt"></i>
+              <h5>Helsinki</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__details"></section>
+    </main>
 
     <!-- Scripts -->
     <script type="module" src="./src/scripts/main.js"></script>
