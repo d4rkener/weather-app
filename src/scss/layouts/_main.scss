@@ -15,7 +15,7 @@
     }
 
     @include abs.breakpoint(large) {
-      width: 330px;
+      width: 370px;
     }
 
     .buttons {
@@ -61,6 +61,98 @@
           i {
             color: abs.$lighterText;
             margin-right: 0.5625rem;
+          }
+        }
+      }
+    }
+  }
+
+  &__details {
+    .card-container {
+      padding: 3.25rem 3.375rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 26px;
+
+      @include abs.breakpoint(large) {
+        padding: 3.25rem 5.5rem;
+      }
+    }
+
+    .highlights {
+      padding: 0 1.4375rem 3.25rem 1.4375rem;
+
+      @include abs.breakpoint(large) {
+        padding: 0 5.5rem 3.25rem 5.5rem;
+      }
+
+      .highlight-container {
+        gap: 26px;
+
+        @include abs.breakpoint(medium) {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .highlight:first-child {
+          > div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1.5rem;
+
+            > span {
+              background: abs.$gray;
+              height: 30px;
+              width: 30px;
+              padding: 10px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 50px;
+              margin-right: 0.5rem;
+
+              i {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+
+        .humidity-mark {
+          margin-top: 1.5rem;
+
+          .mark {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            span {
+              font-weight: 700;
+              color: abs.$lightText;
+            }
+          }
+
+          .progress-bar {
+            position: relative;
+            width: 100%;
+            background: abs.$text;
+            height: 10px;
+            border-radius: 80px;
+
+            .range {
+              position: absolute;
+              width: 80%;
+              height: 100%;
+              background: abs.$yellow;
+              border-radius: 80px;
+            }
+          }
+
+          .percent {
+            font-weight: 700;
+            color: abs.$lightText;
+            text-align: right;
           }
         }
       }

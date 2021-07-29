@@ -1,0 +1,8 @@
+@use '../abstracts' as abs;
+
+.highlight {
+  background: abs.$lightBlack;
+  margin-top: 2rem;
+  padding: 1.375rem;
+  text-align: center;
+}
